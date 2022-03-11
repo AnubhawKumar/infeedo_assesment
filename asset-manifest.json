@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/infeedo_assesment/static/css/main.e496127a.css",
+    "main.js": "/infeedo_assesment/static/js/main.f2bc3762.js",
+    "index.html": "/infeedo_assesment/index.html",
+    "main.e496127a.css.map": "/infeedo_assesment/static/css/main.e496127a.css.map",
+    "main.f2bc3762.js.map": "/infeedo_assesment/static/js/main.f2bc3762.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e496127a.css",
+    "static/js/main.f2bc3762.js"
+  ]
+}
