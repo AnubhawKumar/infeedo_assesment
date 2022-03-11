@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chat_bot_container {
+	width: 55%;
+	border: 2px solid aqua;
+	border-radius: 1%;
+}
+
+.header_chat {
+	padding: 5px;
+}
+
+.header_chat > h3 {
+	margin: 0%;
+	padding: 0%;
+}
+
+.online_dot {
+	background: green;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 100%;
+	margin-right: 5px;
+}
+
+.divider {
+	border: 0;
+	border-top: 2px solid black;
+	margin: 5px;
+}
+
+.message_container {
+	width: 100%;
+	height: 60vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.sent {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.sent > div,
+.received > div {
+	width: 75%;
+	padding: 5px;
+}
+
+.sent > div {
+	display: flex;
+	justify-content: end;
+}
+
+.received {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.received .message {
+	width: fit-content;
+	overflow-wrap: break-word;
+	padding: 20px 20px;
+	border-radius: 0 8px 8px 8px;
+	background: aqua;
+}
+
+.sent .message {
+	width: fit-content;
+	overflow-wrap: break-word;
+	padding: 20px 20px;
+	border-radius: 8px 8px 0px 8px;
+	background: aqua;
+}
+
+.message_time {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+}
+
+.sent .message_time {
+	margin-right: 5px;
+}
+
+.received .message_time {
+	margin-left: 5px;
+}
+
+.footer_chat {
+	padding: 5px;
+}
+
+.footer_chat > form {
+	width: 100%;
+	display: flex;
+}
+
+.input_box {
+	height: 25px;
+	width: 100%;
+	border: 1.5px solid black;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+.send_button {
+	padding: 6px 10px;
+	background: blue;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+  cursor: pointer;
+}
+
+.message_container::-webkit-scrollbar {
+	width: 4px;
+}
+
+.message_container::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.message_container::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
