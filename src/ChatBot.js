@@ -6,7 +6,7 @@ function ChatBot() {
 	const [isChatBotTyping, setIsChatBotTyping] = useState(false);
 	const [conversation, setConversation] = useState([]);
 	const messageContainerRef = useRef();
-
+	
 	useEffect(() => {
 		const firstMessage = {
 			message: "Hey, I am chat bot. I will mimic whatever you will type, like a copy cat but I am not a cat.",
